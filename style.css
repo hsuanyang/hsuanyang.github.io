@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  padding: 0;
+  margin: 0;
+}
+html {
+  font-size: 16px;
+}
+.wrapper {
+  height: 100vh;
+  width: 90%;
+  margin: 0 auto;
+}
+
+header {
+  background-color: rgb(255, 209, 209);
+  height: 10%;
+}
+
+main {
+  display: flex;
+  align-items: stretch;
+  height: 90%;
+}
+aside {
+  background-color: rgb(187, 255, 217);
+  flex: 1 20%;
+}
+article {
+  background-color: rgb(204, 190, 255);
+  /* height: 100%; */
+  flex: 1 80%;
+  overflow-y: scroll;
+}
