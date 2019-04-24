@@ -177,8 +177,38 @@ article p {
 }
 /* Small devices (landscape phones, 576px and up) */
 @media (max-width: 576px) {
+  html {
+    font-size: 12px;
+  }
+  header {
+    height: 15%;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .logo {
+    order: 1;
+    width: 100%;
+  }
+  nav {
+    order: 2;
+  }
   main {
     flex-direction: column;
+    height: 85%;
+  }
+  aside {
+    flex-direction: row;
+    flex-basis: 10%;
+  }
+  aside .work-item {
+    flex-direction: column;
+    flex-grow: 1;
+  }
+  aside .work-item-title {
+    max-width: 3.5rem;
+  }
+  article {
+    padding: 1rem;
   }
 }
 
