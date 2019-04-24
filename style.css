@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:100|Raleway');
+@import url('https://fonts.googleapis.com/css?family=Lato:100');
 * {
   box-sizing: border-box;
   padding: 0;
@@ -154,6 +154,7 @@ article {
 }
 .work-title {
   margin: 1rem;
+  font-weight: 100;
 }
 .work-time {
   margin: 1rem;
