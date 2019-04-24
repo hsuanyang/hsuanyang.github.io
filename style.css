@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:300|Raleway');
+@import url('https://fonts.googleapis.com/css?family=Lato:100|Raleway');
 * {
   box-sizing: border-box;
   padding: 0;
@@ -6,6 +6,7 @@
 }
 body {
   font-family: 'Lato', serif;
+  font-weight: 100;
 }
 html {
   font-size: 16px;
@@ -21,8 +22,8 @@ a {
   margin: 0 auto;
 }
 
+/* ================ Header ================= */
 header {
-  background-color: rgba(255, 209, 209, 0.1);
   height: 20%;
   display: flex;
   justify-content: space-between;
@@ -39,7 +40,7 @@ nav > ul > li {
 }
 nav > ul > li:hover,
 nav > ul > li.active {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid darkgray;
 }
 .logo {
   background-image: url('img/logo.png');
@@ -49,14 +50,16 @@ nav > ul > li.active {
   height: 3rem;
   width: 10rem;
   margin: 1rem;
+  margin-right: 3rem;
 }
+/* ================ Main ================= */
 main {
   display: flex;
   align-items: stretch;
   height: 80%;
 }
+/* ================= Side Menu ================= */
 aside {
-  background-color: rgba(187, 255, 217, 0, 1);
   flex: 1 20%;
   display: flex;
   flex-direction: column;
@@ -70,7 +73,8 @@ aside {
 .work-item-img {
   margin-right: 0.3rem;
   flex-shrink: 0;
-  background-color: black;
+  background-position: center;
+  background-size: cover;
   height: 3.5rem;
   width: 3.5rem;
   opacity: 0.5;
@@ -105,13 +109,70 @@ aside {
   background-image: url('img/block-menu-img-6.png');
 }
 
+/* ================ Content================= */
 article {
-  background-color: rgb(204, 190, 255);
   /* height: 100%; */
   flex: 1 80%;
   overflow-y: scroll;
+  padding: 3rem;
+  /* display: flex;
+  flex-direction: column;
+  overflow: auto; */
 }
 
+.image {
+  width: 100%;
+  height: 25rem;
+  /* background-color: black; */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-bottom: 3rem;
+  position: relative;
+}
+.row-2,
+.row-3 {
+  width: 100%;
+  height: 20rem;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.row-2 > .image {
+  width: 40%;
+  height: auto;
+  margin-right: 5%;
+  margin-left: 5%;
+  margin-bottom: 3rem;
+}
+.row-3 > .image {
+  width: 30%;
+  height: auto;
+  margin-right: 1%;
+  margin-left: 1%;
+  margin-bottom: 3rem;
+}
+.work-title {
+  margin: 1rem;
+}
+.work-time {
+  margin: 1rem;
+  margin-bottom: 3rem;
+}
+article p {
+  max-width: 30rem;
+  margin: 1rem;
+  line-height: 1.5;
+  margin-bottom: 3rem;
+}
+.caption {
+  text-align: center;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.8rem;
+}
 /* Small devices (landscape phones, 576px and up) */
 @media (max-width: 576px) {
   main {
@@ -129,4 +190,73 @@ article {
 
 /*  Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+}
+
+/* ================ work1 ================= */
+.project1 .image1 {
+  background-image: url('img/project1-1.png');
+}
+.project1 .image2 {
+  background-image: url('img/project1-2.png');
+}
+.project1 .image3 {
+  background-image: url('img/project1-3.png');
+}
+.project1 .image4 {
+  background-image: url('img/project1-4.png');
+}
+
+/* ================ work2 ================= */
+.project2 .image1 {
+  background-image: url('img/project2-1.png');
+}
+.project2 .image2 {
+  background-image: url('img/project2-2.png');
+}
+.project2 .image3 {
+  background-image: url('img/project2-3.png');
+}
+/* ================ work3 ================= */
+.project3 .image1 {
+  background-image: url('img/project3-1.png');
+}
+.project3 .image2 {
+  background-image: url('img/project3-2.png');
+}
+.project3 .image3 {
+  background-image: url('img/project3-3.png');
+}
+/* ================ work4 ================= */
+.project4 .image1 {
+  background-image: url('img/project4-1.png');
+}
+.project4 .image2 {
+  background-image: url('img/project4-2.png');
+}
+.project4 .image3 {
+  background-image: url('img/project4-3.png');
+}
+
+/* ================ work5 ================= */
+.project5 .image1 {
+  background-image: url('img/project5-1.png');
+}
+.project5 .image2 {
+  background-image: url('img/project5-2.png');
+}
+.project5 .image3 {
+  background-image: url('img/project5-3.png');
+}
+.project5 .image4 {
+  background-image: url('img/project5-4.png');
+}
+.project5 .image5 {
+  background-image: url('img/project5-5.png');
+}
+/* ================ work6 ================= */
+.project6 .image1 {
+  background-image: url('img/project6-1.png');
+}
+.project6 .image2 {
+  background-image: url('img/project6-2.png');
 }
