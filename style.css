@@ -168,6 +168,14 @@ article p {
   line-height: 1.5;
   margin-bottom: 3rem;
 }
+strong {
+  font-family: Lato, Sans-serif;
+  font-weight: 400;
+}
+.centered {
+  margin-left: auto;
+  margin-right: auto;
+}
 .caption {
   text-align: center;
   position: absolute;
@@ -175,6 +183,9 @@ article p {
   left: 50%;
   transform: translateX(-50%);
   font-size: 0.8rem;
+}
+.email {
+  text-decoration: underline;
 }
 /* Small devices (landscape phones, 576px and up) */
 @media (max-width: 576px) {
